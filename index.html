@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KNGFlow Blog Demo — Accessible To‑Do List</title>
+  <meta name="description" content="A clean, accessible to-do list demo with dark mode and drag-and-drop, built by KNGFlow." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="top-nav" aria-label="Primary">
+        <a class="brand" href=""><span class="brand-mark" aria-hidden="true">◆</span> KNGFlow</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+          <span class="toggle-icon" aria-hidden="true">🌙</span> <span class="toggle-text">Dark mode</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <article class="post" aria-labelledby="post-title">
+      <header class="post-header">
+        <h1 id="post-title">Building the KNGFlow Accessible To‑Do List</h1>
+        <p class="post-deck">A clean, uncluttered, and responsive task manager designed with accessibility at its core.</p>
+      </header>
+
+      <section class="post-section">
+        <h2>Live demo</h2>
+        <p>Interact with the app directly — add tasks, toggle dark mode, drag and drop items, and mark them complete.</p>
+
+        <!-- If your blog supports iframes, keep this. Otherwise remove the iframe and keep the link below. -->
+        <div class="demo-embed" role="region" aria-label="Live demo embed">
+          <iframe
+            title="KNGFlow To‑Do List Live Demo"
+            src="https://kngflow-kaylee.github.io/Todo-List-App"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-storage-access-by-user-activation"
+
+
+          ></iframe>
+        </div>
+
+        <p class="demo-link">
+          Prefer a full page view?
+          <a href="https://kngflow-kaylee.github.io/Todo-List-App" target="_blank" rel="noopener">Open the demo in a new tab</a>.
+        </p>
+      </section>
+
+      <section class="post-section">
+        <h2>Features</h2>
+        <ul class="feature-list">
+          <li><strong>Tasks:</strong> Add, complete, and delete tasks with a simple, uncluttered interface.</li>
+          <li><strong>Dark mode:</strong> Toggle saved in localStorage for consistent preference.</li>
+          <li><strong>Drag and drop:</strong> Reorder tasks intuitively.</li>
+          <li><strong>Persistence:</strong> Tasks remain after refresh via localStorage.</li>
+          <li><strong>Accessibility:</strong> Semantic HTML, ARIA labels, focus outlines, keyboard-friendly controls.</li>
+          <li><strong>Responsive:</strong> Works seamlessly on desktop and mobile.</li>
+        </ul>
+      </section>
+
+      <section class="post-section">
+        <h2>Screenshots</h2>
+        <div class="screenshot-grid">
+          <figure class="shot">
+            <img src="assets_screenshots/screenshot-light.png" alt="To‑Do List in light mode showing task list UI" />
+            <figcaption>Light mode</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets_screenshots/screenshot-dark.png" alt="To‑Do List in dark mode showing accessible contrast" />
+            <figcaption>Dark mode</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets_screenshots/screenshot-reorder.png" alt="Drag-and-drop reordering of tasks in the app" />
+            <figcaption>Drag & Drop</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets_screenshots/screenshot-completed.png" alt="Completed tasks with visual indicators" />
+            <figcaption>Completed task</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="post-section">
+        <h2>Behind the scenes</h2>
+        <p>This app was built with semantic <strong>HTML</strong> for structure, modern <strong>CSS</strong> for styling and dark mode, and vanilla <strong>JavaScript</strong> for interactivity, drag‑and‑drop, and localStorage persistence. Accessibility was prioritized from the start to ensure the app is usable by everyone.</p>
+      </section>
+
+      <footer class="post-footer">
+        <div class="cta">
+          <a class="button" href="https://your-portfolio-link.example" target="_blank" rel="noopener">View more projects</a>
+          <a class="button button-secondary" href="https://kngflow-kaylee.github.io/Todo-List-App" target="_blank" rel="noopener">Open live demo</a>
+        </div>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p class="footnote">Built with care by KNGFlow • Accessibility first • © 2025</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
